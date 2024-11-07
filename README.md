@@ -10,3 +10,17 @@
 
 <h1>Colaboradores</h1>
 
+<p>PO</p>
+<p><a href="https://github.com/jmcardoso18">Jamila M. Cardoso</a></p>
+
+<p>Desenvolvedores Web</p>
+<p><a href="https://github.com/thurzinho-0">Arthur A.A. Marques</a></p>
+<p><a href="https://github.com/KauaXavier1">Kauã E.B. Xavier</a></p>
+<p><a href="https://github.com/PatrickFranzini">Patrick E.B. Franzini</a></p>
+<p><a href="https://github.com/VictorHg78">Victor H.R. dos Santos</a></p>
+
+<p>Desenvolvedores Mobile</p>
+<p><a href="">Diego A.G. Junior</a></p>
+<p><a href="https://github.com/valdemirvalentin07">Valdemir V. Santos - "Galego"</a></p>
+
+
