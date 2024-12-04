@@ -4,9 +4,11 @@
 
 <p> Trabalho de implementação de software e repaginação do site para a empresa <a href="https://www.centrosalutares.com.br/">Centro Salutares</a></p>
 
-<p>Cronograma</p>
+
 
 <p>Projeto</p>
+<p><a href="https://phenomenal-crostata-c504e5.netlify.app/">Site do projeto</p>
+
 
 <h1>Colaboradores</h1>
 
