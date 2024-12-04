@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="agendamento.css">
+    <title>Agendamento - Centro Salutares</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-purple" href="home.html">Centro Salutares</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="home.html" class="nav-link text-purple">Home</a></li>
+                        <li class="nav-item"><a href="planos.html" class="nav-link text-purple">Planos Mensais</a></li>
+                        <li class="nav-item"><a href="profissionais.html" class="nav-link text-purple">Profissionais</a></li>
+                        <li class="nav-item"><a href="servicos.html" class="nav-link text-purple">Servicos</a></li>
+                        <li class="nav-item"><a href="contato.html" class="nav-link text-purple">Contato</a></li>
+                        <li class="nav-item"><a href="agendamento.html" class="btn btn-outline-purple nav-link text-purple">Agendamento</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Agendamento Section -->
+    <main>
+        <section class="agendamento py-5">
+            <div class="container">
+                <h2 class="text-center text-dark mb-4">Agende Sua Terapia</h2>
+                <form action="#" method="POST">
+                    <div class="row mb-3">
+                        <label for="nome" class="col-md-3 col-form-label">Nome Completo</label>
+                        <div class="col-md-9">
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="terapia" class="col-md-3 col-form-label">Selecione a Terapia</label>
+                        <div class="col-md-9">
+                            <select id="terapia" name="terapia" class="form-control" required>
+                                <option value="">Escolha uma Terapia</option>
+                                <option value="hidrovitalis">Hidrovitalis</option>
+                                <option value="pilates">Pilates</option>
+                                <option value="rpg">RPG</option>
+                                <option value="massoterapia">Massoterapia</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="acupuntura">Acupuntura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="data" class="col-md-3 col-form-label">Data e Horário</label>
+                        <div class="col-md-9">
+                            <input type="datetime-local" id="data" name="data" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="telefone" class="col-md-3 col-form-label">Telefone</label>
+                        <div class="col-md-9">
+                            <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-purple">Confirmar Agendamento</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-purple text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">© 2024 Centro Salutares. Todos os direitos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/centrosalutares/" class="text-white text-decoration-none" target="_blank">Facebook</a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/centro_salutares/" class="text-white text-decoration-none" target="_blank">Instagram</a></li>
+                <li class="list-inline-item"><a href="https://api.whatsapp.com/send/?phone=5519997432323" class="text-white text-decoration-none" target="_blank">WhatsApp</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita o envio real do formulário
+    
+            // Exibe uma mensagem de confirmação (opcional)
+            alert("Agendamento confirmado com sucesso! Voltando a página inicial...");
+    
+            // Redireciona para a página home
+            window.location.href = "home.html";
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

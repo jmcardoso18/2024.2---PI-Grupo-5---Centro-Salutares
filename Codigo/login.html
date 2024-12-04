@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"> 
+    <title>Login e Registro</title>
+</head>
+<body>
+    <main class="auth">
+        <section class="auth__container">
+            <header class="auth__header">
+                <h1>Bem-vindo ao Centro Salutares</h1>
+                <p>Faça login para continuar ou registre-se para criar uma conta.</p>
+            </header>
+
+            <div class="auth__tabs">
+                <button id="login-tab" class="auth__tab active">Login</button>
+                <button id="register-tab" class="auth__tab">Registrar</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth__form active" action="agendamento.html" method="GET">
+                <h2>Login</h2>
+                <div class="auth__field">
+                    <label for="login-email">E-mail:</label>
+                    <input type="email" id="login-email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="auth__field">
+                    <label for="login-password">Senha:</label>
+                    <input type="password" id="login-password" name="password" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="auth__cta">Entrar</button>
+                <p class="auth__helper">Esqueceu sua senha? <a href="forgot-password.html">Clique aqui</a></p>
+            </form>
+
+            <!-- Formulário de Registro -->
+            <form id="register-form" class="auth__form" action="register.html" method="POST">
+                <h2>Registrar</h2>
+                <div class="auth__field">
+                    <label for="register-name">Nome:</label>
+                    <input type="text" id="register-name" name="name" placeholder="Seu nome completo" required>
+                </div>
+                <div class="auth__field">
+                    <label for="register-email">E-mail:</label>
+                    <input type="email" id="register-email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="auth__field">
+                    <label for="register-password">Senha:</label>
+                    <input type="password" id="register-password" name="password" placeholder="Crie uma senha" required>
+                </div>
+                <div class="auth__field">
+                    <label for="register-confirm-password">Confirme a Senha:</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" placeholder="Repita a senha" required>
+                </div>
+                <div id="error-message" class="auth__error" style="display: none;">As senhas não correspondem.</div>
+                <button type="submit" class="auth__cta">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="auth.js"></script> 
+</body>
+</html>

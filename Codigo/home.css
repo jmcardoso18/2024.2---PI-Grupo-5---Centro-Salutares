@@ -1,0 +1,79 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin-top: 75px; /* Para evitar que a navbar sobreponha conteúdo */
+}
+
+/* Navbar */
+.navbar-light .navbar-brand {
+    color: #6a0dad !important;
+}
+
+.navbar-light .nav-link {
+    color: #6a0dad !important;
+}
+
+.navbar-light .nav-link:hover {
+    color: #4b0082 !important;
+}
+
+.text-purple {
+    color: #6a0dad !important;
+}
+
+/* Hero Section */
+.hero {
+    background: #6a0dad;
+    padding: 50px 0;
+}
+
+.hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #6a0dad; /* Fundo do footer em roxo */
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.navbar-light .nav-link:focus, .navbar-light .navbar-brand:focus, .btn:focus {
+    outline: 3px solid #ff6f61; /* Cor visível para foco */
+    outline-offset: 2px;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+/* Estilo para o botão de login */
+.navbar .btn-outline-purple {
+    border-color: #6a0dad;
+    color: #6a0dad;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .btn-outline-purple:hover {
+    background-color: #6a0dad;
+    color: white;
+}
+
+/* Restante do código CSS para o design da navbar, hero, footer, etc. */
